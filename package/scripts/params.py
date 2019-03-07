@@ -231,7 +231,7 @@ HdfsResource = functools.partial(
 )
 
 # configurations of Yarn
-resourcemanager_hosts = default("/clusterHostInfo/rm_host", [])
+resourcemanager_hosts = default("/clusterHostInfo/resourcemanager_hosts", [])
 resourcemanager_host = str(resourcemanager_hosts)
 resourcemanager_port = config['configurations']['yarn-site']['yarn.resourcemanager.address'].split(':')[-1]
 resourcemanager_ha_enabled = False
