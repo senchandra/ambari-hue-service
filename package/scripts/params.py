@@ -251,7 +251,7 @@ else:
   resourcemanager_webapp_address1 = config['configurations']['yarn-site']['yarn.resourcemanager.webapp.address']
   resourcemanager_api_url1 = format('http://{resourcemanager_webapp_address1}')
   proxy_api_url1 = resourcemanager_api_url1
-histroryserver_host = default("/clusterHostInfo/hs_host", [])
+histroryserver_host = default("/clusterHostInfo/historyserver_hosts", [])
 history_server_api_url = format('http://{histroryserver_host[0]}:19888')
 slave_hosts = default("/clusterHostInfo/slave_hosts", [])
 
