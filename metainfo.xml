@@ -71,7 +71,7 @@
 	      <package><name>wget</name></package>   
 	      <package><name>tar</name></package>
 	      <package><name>asciidoc</name></package>
-	      <package><name>krb5-devel</name></package>
+<!--	      <package><name>krb5-devel</name></package>
 	      <package><name>libxml2-devel</name></package>
 	      <package><name>libxslt-devel</name></package>		   
 	      <package><name>openldap-devel</name></package>
@@ -88,7 +88,7 @@
 	      <package><name>cyrus-sasl-plain</name></package>
 	      <package><name>cyrus-sasl-devel</name></package>
 	      <package><name>cyrus-sasl-gssapi</name></package>
-	      <package><name>libffi-devel</name></package>
+	      <package><name>libffi-devel</name></package>-->
         </packages>
 	  </osSpecific>
 	</osSpecifics>
