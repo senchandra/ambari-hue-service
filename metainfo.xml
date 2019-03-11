@@ -71,6 +71,14 @@
 	      <package><name>wget</name></package>   
 	      <package><name>tar</name></package>
 	      <package><name>asciidoc</name></package>
+              <package><name>libffi-dev</name></package>
+              <package><name>libssl-dev</name></package>
+              <package><name>libsqlite3-dev</name></package>
+              <package><name>libsasl2-dev</name></package>
+              <package><name>python-dev</name></package>
+              <package><name>libldap2-dev</name></package>
+              <package><name>libssl-dev</name></package>
+              <package><name>libmysqlclient-dev</name></package>
 <!--	      <package><name>krb5-devel</name></package>
 	      <package><name>libxml2-devel</name></package>
 	      <package><name>libxslt-devel</name></package>		   
