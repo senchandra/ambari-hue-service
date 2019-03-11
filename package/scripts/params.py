@@ -84,7 +84,7 @@ if hue_spark_module_enabled == 'No':
 app_blacklists = list(set(app_blacklists))
 app_blacklist = ','.join(app_blacklists)
 
-java_home = config['hostLevelParams']['java_home']
+java_home = config['ambariLevelParams']['java_home']
 http_host = config['hostname']
 http_port = config['configurations']['hue-env']['http_port']
 hue_pid_dir = config['configurations']['hue-env']['hue_pid_dir']
