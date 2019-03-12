@@ -79,6 +79,10 @@
               <package><name>libldap2-dev</name></package>
               <package><name>libssl-dev</name></package>
               <package><name>libmysqlclient-dev</name></package>
+              <package><name>libxml2-dev</name></package>
+              <package><name>libxslt1-dev</name></package>
+              <package><name>libkrb5-dev</name></package>
+              <package><name>libgmp3-dev</name></package>
 <!--	      <package><name>krb5-devel</name></package>
 	      <package><name>libxml2-devel</name></package>
 	      <package><name>libxslt-devel</name></package>		   
