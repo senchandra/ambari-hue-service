@@ -208,7 +208,7 @@ hadoop_bin_dir = stack_select.get_hadoop_dir('bin')
 hadoop_conf_dir = conf_select.get_hadoop_conf_dir()
 hdfs_site = config['configurations']['hdfs-site']
 default_fs = config['configurations']['core-site']['fs.defaultFS']
-dfs_type = default("/commandParams/dfs_type", "")
+dfs_type = default("/clusterLevelParams/dfs_type", "")
 hdfs_user_keytab = config['configurations']['hadoop-env']['hdfs_user_keytab']
 hdfs_principal_name = config['configurations']['hadoop-env']['hdfs_principal_name']
 kinit_path_local = get_kinit_path(default('/configurations/kerberos-env/executable_search_paths', None))
@@ -291,9 +291,9 @@ solr_solrctl_path = config['configurations']['hue-solr-site']['solrctl_path']
 
 # configurations of Hive and Pig
 # Hive service is depended on Pig in ambari
-hive_server_hosts =  default("/clusterHostInfo/hive_server_host", [])
+hive_server_hosts =  default("/clusterHostInfo/hive_server_hosts", [])
 if len(hive_server_hosts) > 0:
-  hive_server_host = config['clusterHostInfo']['hive_server_host'][0]
+  hive_server_host = config['clusterHostInfo']['hive_server_hosts'][0]
   hive_transport_mode = config['configurations']['hive-site']['hive.server2.transport.mode']
   if hive_transport_mode.lower() == "http":
     hive_server_port = config['configurations']['hive-site']['hive.server2.thrift.http.port']
